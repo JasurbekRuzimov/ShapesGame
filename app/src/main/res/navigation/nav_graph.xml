@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/beginGame">
+
+    <fragment
+        android:id="@+id/beginGame"
+        android:name="uz.jasurbekruzimov.shapesgame.BeginGame"
+        android:label="fragment_begin_game"
+        tools:layout="@layout/fragment_begin_game" >
+        <action
+            android:id="@+id/action_beginGame_to_playingGame"
+            app:destination="@id/playingGame" />
+    </fragment>
+    <fragment
+        android:id="@+id/playingGame"
+        android:name="uz.jasurbekruzimov.shapesgame.PlayingGame"
+        android:label="fragment_playing_game"
+        tools:layout="@layout/fragment_playing_game" />
+</navigation>
